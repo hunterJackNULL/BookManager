@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<welcome-file-list>
+		<welcome-file>welcome.jsp</welcome-file>
+		<welcome-file>bookmanager.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>BookServlet</servlet-name>
+		<servlet-class>com.servlet.BookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookServlet</servlet-name>
+		<url-pattern>/book</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookServlet</servlet-name>
+		<url-pattern>*.book</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AffairServlet</servlet-name>
+		<servlet-class>com.servlet.AffairServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AffairServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ValidateColorServlet</servlet-name>
+		<servlet-class>com.servlet.ValidateColorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ValidateColorServlet</servlet-name>
+		<url-pattern>/validateColor</url-pattern>
+	</servlet-mapping>
+</web-app>

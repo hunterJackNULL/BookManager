@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+table{
+	font-size: 40px;
+	color:red;
+	position: fixed;right: 0;bottom: 0;
+}
+.submit{
+	font-size: 30px;
+	color:blue;
+}
+h1,h2{
+	color:red;
+}
+.error{
+	color:blue;
+}

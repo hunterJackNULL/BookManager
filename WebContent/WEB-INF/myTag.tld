@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>MyTag</description>
+	<display-name>MyTag core</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>myTag</short-name>
+	<uri>http://www.jw.com/mytag/core</uri>
+	<tag>
+		<name>max</name>
+		<tag-class>javaweb.tag.FindMax</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num1</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>num2</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>read</name>
+		<tag-class>javaweb.tag.ReadFile</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>src</name>
+			<required>true</required>
+			<!-- runtime expression value -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>UpperCase</name>
+		<tag-class>javaweb.tag.UpperCase</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>time</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+	<tag>
+		<name>foreach</name>
+		<tag-class>javaweb.tag.ForEach</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>items</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+
+	</tag>
+	<tag>
+		<name>choose</name>
+		<tag-class>javaweb.tag.Choose</tag-class>
+		<body-content>scriptless</body-content>	
+	</tag>
+	<tag>
+		<name>when</name>
+		<tag-class>javaweb.tag.When</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>test</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>otherwise</name>
+		<tag-class>javaweb.tag.Otherwise</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>
+
+
+
+
+
+
+
+
+
